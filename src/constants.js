@@ -16,7 +16,7 @@ import figmaLogo from './assets/tech_logo/figma.png';
 //work logo
 import drowsinessImg from './assets/work_logo/drowsiness.jpeg';
 import resumeParserImg from './assets/work_logo/resume_parser.png';
-import attendanceImg from './assets/work_logo/Attendance.jpeg';
+import attendanceImg from './assets/work_logo/attendance.jpeg';
 import newsAppImg from './assets/work_logo/news-app.png';
 import auth3faImg from './assets/work_logo/3fa.png';
 import railwayImg from './assets/work_logo/Railway.png';
