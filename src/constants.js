@@ -125,69 +125,70 @@ export const education = [
 // Projects
 
 export const projects = [
-{
-id: 0,
-title: "AI-Based Driver Drowsiness Detection System",
-description:
-"AI-powered driver monitoring system built with Python, OpenCV, and MediaPipe to detect driver fatigue in real time using facial landmarks and eye aspect ratio analysis with alert notifications.",
-image: drowsinessImg,
-tags: ["Python","OpenCV","MediaPipe","Computer Vision"],
-github: "",
-webapp: "",
-},
+  {
 
-{
-id: 1,
-title: "AI-Powered Resume Parser",
-description:
-"AI-based resume parsing system built using MERN stack and FastAPI capable of processing 30–40 resumes simultaneously.",
-image: resumeParserImg,
-tags: ["MERN Stack","FastAPI","NLP","MongoDB"],
-github: "https://github.com/aryanjamatia/Ai_Powered_Resume_Parser.git",
-webapp: "",
-},
+    id: 0,
+    title: "Smart Attendance System (QR + Network Validation)",
+    description:
+      "Mobile-based smart attendance system built with React Native and MERN stack. Uses QR code sessions, Wi-Fi IP prefix validation, and a real-time heartbeat mechanism to ensure secure and accurate attendance tracking. Prevents proxy attendance by requiring students to stay connected throughout the session.",
+    image: attendanceImg,
+    tags: ["React Native", "Node.js", "MongoDB", "Express", "MERN Stack"],
+    github: "https://github.com/aryanjamatia/Attendance_backend",
+    app: "https://drive.google.com/file/d/1Pf_YrZTYx-yY9A7UJoz95cqTo8Xox9E3/view?usp=drive_link",
+    user_manual: "https://drive.google.com/file/d/1yhOUCzayRr04zwpkuBTWOyHbTzIz4NYv/view?usp=drive_link", 
+  },
+  {
+    id: 1,
+    title: "AI-Based Driver Drowsiness Detection System",
+    description:
+      "AI-powered driver monitoring system built with Python, OpenCV, and MediaPipe to detect driver fatigue in real time using facial landmarks and eye aspect ratio analysis with alert notifications.",
+    image: drowsinessImg,
+    tags: ["Python", "OpenCV", "MediaPipe", "Computer Vision"],
+    github: "",
+    webapp: "",
+  },
 
-{
-id: 2,
-title: "Smart Attendance Monitoring System",
-description:
-"Web-based system with Admin, Teacher and Student portals. Admin manages academic calendar and students, teachers take attendance, and students track their attendance percentage with alerts to maintain 75%.",
-image: attendanceImg,
-tags: ["MERN Stack","Authentication","Attendance System"],
-github: "https://github.com/aryanjamatia/Smart_Attendance_Monitoring_System_MERN.git",
-webapp: "",
-},
+  {
+    id: 2,
+    title: "AI-Powered Resume Parser",
+    description:
+      "AI-based resume parsing system built using MERN stack and FastAPI capable of processing 30–40 resumes simultaneously.",
+    image: resumeParserImg,
+    tags: ["MERN Stack", "FastAPI", "NLP", "MongoDB"],
+    github: "https://github.com/aryanjamatia/Ai_Powered_Resume_Parser.git",
+    webapp: "",
+  },
 
-{
-id: 3,
-title: "Local News Mobile Application",
-description:
-"React Native mobile application that displays local news with category-based browsing and responsive UI for Android devices.",
-image: newsAppImg,
-tags: ["React Native","Mobile App"],
-github: "https://github.com/aryanjamatia/React-Native-MERN-stack-NewsApp-frontend.git",
-webapp: "",
-},
+  {
+    id: 3,
+    title: "Local News Mobile Application",
+    description:
+      "React Native mobile application that displays local news with category-based browsing and responsive UI for Android devices.",
+    image: newsAppImg,
+    tags: ["React Native", "Mobile App"],
+    github: "https://github.com/aryanjamatia/React-Native-MERN-stack-NewsApp-frontend.git",
+    webapp: "",
+  },
 
-{
-id: 4,
-title: "3-Factor Authentication System for UIDAI",
-description:
-"Secure authentication system combining password, OTP, and identity verification built for Smart India Hackathon 2024.",
-image: auth3faImg,
-tags: ["Cyber Security","Authentication","OTP"],
-github: "https://github.com/montukr/Facial-3FA-UIDAI.git",
-webapp: "",
-},
+  {
+    id: 4,
+    title: "3-Factor Authentication System for UIDAI",
+    description:
+      "Secure authentication system combining password, OTP, and identity verification built for Smart India Hackathon 2024.",
+    image: auth3faImg,
+    tags: ["Cyber Security", "Authentication", "OTP"],
+    github: "https://github.com/montukr/Facial-3FA-UIDAI.git",
+    webapp: "",
+  },
 
-{
-id: 5,
-title: "Railway Reservation System",
-description:
-"Web-based train booking system built with Django supporting authentication, train search, ticket booking and MySQL database.",
-image: railwayImg,
-tags: ["Django","Python","MySQL"],
-github: "https://github.com/aryanjamatia/railway_reservation_system.git",
-webapp: "",
-}
+  {
+    id: 5,
+    title: "Railway Reservation System",
+    description:
+      "Web-based train booking system built with Django supporting authentication, train search, ticket booking and MySQL database.",
+    image: railwayImg,
+    tags: ["Django", "Python", "MySQL"],
+    github: "https://github.com/aryanjamatia/railway_reservation_system.git",
+    webapp: "",
+  }
 ];

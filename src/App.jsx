@@ -9,9 +9,11 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
 
+
+
 const App = () => {
   return (
-    <div className="bg-[#050414]">
+    <div className="bg-[#020617]">
 
        <BlurBlob position={{ top: '35%', left: '20%' }} size={{ width: '30%', height: '40%' }} />
 
@@ -27,6 +29,7 @@ const App = () => {
         <Contact />
         <Footer />
       </div>
+      
 
     </div>
   );

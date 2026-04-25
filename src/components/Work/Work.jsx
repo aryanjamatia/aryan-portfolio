@@ -20,7 +20,7 @@ const Work = () => {
       {/* Section Title */}
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-white">PROJECTS</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
+        <div className="w-32 h-1 bg-cyan-500 mx-auto mt-4"></div>
         <p className="text-gray-400 mt-4 text-lg font-semibold">
           A showcase of the projects I have worked on, highlighting my skills
           and experience in various technologies
@@ -53,7 +53,7 @@ const Work = () => {
                 {project.tags.map((tag, index) => (
                   <span
                     key={index}
-                    className="inline-block bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1 mr-2 mb-2"
+                    className="inline-block bg-[#251f38] text-xs font-semibold text-cyan-400 rounded-full px-2 py-1 mr-2 mb-2"
                   >
                     {tag}
                   </span>
@@ -64,20 +64,24 @@ const Work = () => {
         ))}
       </div>
 
-      {/* Modal Container */}
+      {/* Modal */}
       {selectedProject && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4">
           <div className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative">
+            
+            {/* Close Button */}
             <div className="flex justify-end p-4">
               <button
                 onClick={handleCloseModal}
-                className="text-white text-3xl font-bold hover:text-purple-500"
+                className="text-white text-3xl font-bold hover:text-cyan-400"
               >
                 &times;
               </button>
             </div>
 
             <div className="flex flex-col">
+              
+              {/* Image */}
               <div className="w-full flex justify-center bg-gray-900 px-4">
                 <img
                   src={selectedProject.image}
@@ -85,24 +89,34 @@ const Work = () => {
                   className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
                 />
               </div>
+
+              {/* Content */}
               <div className="lg:p-8 p-6">
+                
                 <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
                   {selectedProject.title}
                 </h3>
+
                 <p className="text-gray-400 mb-6 lg:text-base text-xs">
                   {selectedProject.description}
                 </p>
+
+                {/* Tags */}
                 <div className="flex flex-wrap gap-2 mb-6">
                   {selectedProject.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1"
+                      className="bg-[#251f38] text-xs font-semibold text-cyan-400 rounded-full px-2 py-1"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-                <div className="flex justify-center">
+
+                {/* 🔥 Buttons Section */}
+                <div className="flex flex-wrap justify-center gap-4">
+
+                  {/* GitHub */}
                   {selectedProject.github && (
                     <a
                       href={selectedProject.github}
@@ -113,8 +127,41 @@ const Work = () => {
                       View Code
                     </a>
                   )}
+
+                  {/* APK Button (ONLY Attendance Project) */}
+                  {selectedProject.app && (
+                    <a
+                      href={selectedProject.app}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r from-green-500 to-green-700 hover:from-green-600 hover:to-green-800 text-white px-8 py-3 rounded-xl text-lg font-semibold text-center transition-all duration-300 shadow-lg hover:shadow-green-500/40"
+                    >
+                      📱 Download App
+                    </a>
+                  )}
+
+                  {/* User Manual Button */}
+                  {selectedProject.user_manual && (
+                    <a
+                      href={selectedProject.user_manual}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-8 py-3 rounded-xl text-lg font-semibold text-center transition-all duration-300 shadow-lg hover:shadow-blue-500/40"
+                    >
+                      📄 User Manual
+                    </a>
+                  )}
+
                 </div>
-              </div>  
+
+                {/* Optional Note */}
+                {selectedProject.app && (
+                  <p className="text-gray-500 text-sm mt-4 text-center">
+                    * Enable "Install from Unknown Sources" to install APK
+                  </p>
+                )}
+
+              </div>
             </div>
           </div>
         </div>
