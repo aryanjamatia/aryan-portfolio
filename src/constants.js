@@ -134,7 +134,7 @@ export const projects = [
     image: attendanceImg,
     tags: ["React Native", "Node.js", "MongoDB", "Express", "MERN Stack"],
     github: "https://github.com/aryanjamatia/Attendance_backend",
-    app: "https://drive.google.com/file/d/1FB0dP680dWb32WgyHzVfkzLDrirsruOP/view?usp=drive_link",
+    app: "https://drive.google.com/file/d/1qi7zzZVsGTrt8W0aLfCgxAVszxp2dng5/view?usp=drive_link",
     user_manual: "https://drive.google.com/file/d/1yhOUCzayRr04zwpkuBTWOyHbTzIz4NYv/view?usp=drive_link", 
   },
   {
