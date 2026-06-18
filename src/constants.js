@@ -97,7 +97,7 @@ export const education = [
     img: adtuLogo,
     school: "Assam Down Town University, Guwahati",
     date: "2023 – 2026",
-    grade: "8.9 CGPA  ",
+    grade: "8.02 CGPA  ",
     desc: "Currently pursuing Bachelor of Computer Application with focus on Data Science, software development, and modern web technologies.",
     degree: "Bachelor of Computer Application (BCA)",
   },
@@ -125,31 +125,20 @@ export const education = [
 // Projects
 
 export const projects = [
-  {
 
-    id: 0,
-    title: "Smart Attendance System (QR + Network Validation)",
-    description:
-      "Mobile-based smart attendance system built with React Native and MERN stack. Uses QR code sessions, Wi-Fi IP prefix validation, and a real-time heartbeat mechanism to ensure secure and accurate attendance tracking. Prevents proxy attendance by requiring students to stay connected throughout the session.",
-    image: attendanceImg,
-    tags: ["React Native", "Node.js", "MongoDB", "Express", "MERN Stack"],
-    github: "https://github.com/aryanjamatia/Attendance_backend",
-    app: "https://drive.google.com/file/d/1qi7zzZVsGTrt8W0aLfCgxAVszxp2dng5/view?usp=drive_link",
-    user_manual: "https://drive.google.com/file/d/1yhOUCzayRr04zwpkuBTWOyHbTzIz4NYv/view?usp=drive_link", 
-  },
   {
-    id: 1,
+    id: 0,
     title: "AI-Based Driver Drowsiness Detection System",
     description:
       "AI-powered driver monitoring system built with Python, OpenCV, and MediaPipe to detect driver fatigue in real time using facial landmarks and eye aspect ratio analysis with alert notifications.",
     image: drowsinessImg,
     tags: ["Python", "OpenCV", "MediaPipe", "Computer Vision"],
-    github: "",
+    github: "https://github.com/SuinKhaba/Driver-Drowsiness-Detection-System.git",
     webapp: "",
   },
 
   {
-    id: 2,
+    id: 1,
     title: "AI-Powered Resume Parser",
     description:
       "AI-based resume parsing system built using MERN stack and FastAPI capable of processing 30–40 resumes simultaneously.",
@@ -160,7 +149,7 @@ export const projects = [
   },
 
   {
-    id: 3,
+    id: 2,
     title: "Local News Mobile Application",
     description:
       "React Native mobile application that displays local news with category-based browsing and responsive UI for Android devices.",
@@ -171,7 +160,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "3-Factor Authentication System for UIDAI",
     description:
       "Secure authentication system combining password, OTP, and identity verification built for Smart India Hackathon 2024.",
@@ -182,7 +171,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 4,
     title: "Railway Reservation System",
     description:
       "Web-based train booking system built with Django supporting authentication, train search, ticket booking and MySQL database.",
